@@ -1,4 +1,6 @@
 import React from "react";
+import portifolioConfig from "./config/portifolioConfig";
+import Tilt from "react-parallax-tilt";
 
 const Portifolio = () => {
   return (
@@ -9,59 +11,22 @@ const Portifolio = () => {
       </h1>
 
       <div className="box-container">
-        <div className="box tilt">
-          <img src="images/img-1.jpg" alt="" />
-          <div className="content">
-            <a href="#" className="btn">
-              learn more
-            </a>
+        {portifolioConfig.map((portifolio) => (
+          <div key={portifolio.id} className="box tilt">
+            <img src={portifolio.img} alt="" />
+            <div className="content">
+              <h1>{portifolio.name}</h1>
+              <div className="">
+                <a href={portifolio.url} target="_blank" className="btn">
+                  Demo
+                </a>
+                <a href={portifolio.sourceCode} target="_blank" className="btn">
+                  Source Code
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className="box tilt">
-          <img src="images/img-2.jpg" alt="" />
-          <div className="content">
-            <a href="#" className="btn">
-              learn more
-            </a>
-          </div>
-        </div>
-
-        <div className="box tilt">
-          <img src="images/img-3.jpg" alt="" />
-          <div className="content">
-            <a href="#" className="btn">
-              learn more
-            </a>
-          </div>
-        </div>
-
-        <div className="box tilt">
-          <img src="images/img-4.jpg" alt="" />
-          <div className="content">
-            <a href="#" className="btn">
-              learn more
-            </a>
-          </div>
-        </div>
-
-        <div className="box tilt">
-          <img src="images/img-5.jpg" alt="" />
-          <div className="content">
-            <a href="#" className="btn">
-              learn more
-            </a>
-          </div>
-        </div>
-
-        <div className="box tilt">
-          <img src="images/img-6.jpg" alt="" />
-          <div className="content">
-            <a href="#" className="btn">
-              learn more
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

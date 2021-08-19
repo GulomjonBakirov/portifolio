@@ -42,7 +42,6 @@ const Header = () => {
         <a href="#about">about</a>
         <a href="#services">services</a>
         <a href="#portfolio">portfolio</a>
-        <a href="#blogs">blogs</a>
         <a href="#contact">contact</a>
       </nav>
     </header>

@@ -1,6 +1,46 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 
 const Services = () => {
+  const servicesConfig = [
+    {
+      id: 1,
+      icon: "fas fa-robot",
+      name: "AI development",
+      description: "I am a currently learning Python AI development",
+    },
+    {
+      id: 2,
+      icon: "fab fa-js",
+      name: "JavaScript Development",
+      description: "I am a Full Stack JavaScript Developer",
+    },
+    {
+      id: 3,
+      icon: "fas fa-mobile",
+      name: "Responsive Designs",
+      description: "Create only responsive sites",
+    },
+    {
+      id: 4,
+      icon: "fas fa-robot",
+      name: "AI development",
+      description: "I am a currently learning Python AI development",
+    },
+    {
+      id: 5,
+      icon: "fab fa-js",
+      name: "JavaScript Development",
+      description: "I am a Full Stack JavaScript Developer",
+    },
+    {
+      id: 6,
+      icon: "fas fa-mobile",
+      name: "Responsive Designs",
+      description: "Create only responsive sites",
+    },
+  ];
+
   return (
     <section className="services" id="services">
       <h1 className="heading">
@@ -9,59 +49,13 @@ const Services = () => {
       </h1>
 
       <div className="box-container">
-        <div className="box tilt">
-          <i className="fas fa-code"></i>
-          <h3>web development</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            quidem.
-          </p>
-        </div>
-
-        <div className="box tilt">
-          <i className="fas fa-paint-brush"></i>
-          <h3>graphic design</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            quidem.
-          </p>
-        </div>
-
-        <div className="box tilt">
-          <i className="fas fa-bullhorn"></i>
-          <h3>seo marketing</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            quidem.
-          </p>
-        </div>
-
-        <div className="box tilt">
-          <i className="fas fa-envelope"></i>
-          <h3>email marketing</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            quidem.
-          </p>
-        </div>
-
-        <div className="box tilt">
-          <i className="fas fa-mobile"></i>
-          <h3>Responsive designs</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            quidem.
-          </p>
-        </div>
-
-        <div className="box tilt">
-          <i className="fab fa-wordpress"></i>
-          <h3>wordpress</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            quidem.
-          </p>
-        </div>
+        {servicesConfig.map((service) => (
+          <Tilt key={service.id} className="box tilt">
+            <i className={service.icon}></i>
+            <h3>{service.name}</h3>
+            <p>{service.description}</p>
+          </Tilt>
+        ))}
       </div>
     </section>
   );
