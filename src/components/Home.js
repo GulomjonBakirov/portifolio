@@ -19,6 +19,26 @@ const Home = () => {
         </h3>
         <p>
           {" "}
+          <ReactTyped
+            strings={[
+              "Assalomu alaykum va rahmatullohi va barokatuhu",
+              "Здравствуйте",
+              "Hello",
+              "Hola",
+              "Bonjour",
+              "Ciao",
+              "Guten Tag",
+              "Namaste",
+            ]}
+            typeSpeed={50}
+            backSpeed={50}
+            backDelay={1}
+            loop
+            smartBackspace
+          />
+        </p>
+        <p>
+          {" "}
           i am a{" "}
           <span className="typing-text">
             {" "}

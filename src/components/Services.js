@@ -4,16 +4,10 @@ import Tilt from "react-parallax-tilt";
 const Services = () => {
   const servicesConfig = [
     {
-      id: 1,
-      icon: "fas fa-robot",
-      name: "AI development",
-      description: "I am a currently learning Python AI development",
-    },
-    {
       id: 2,
       icon: "fab fa-js",
-      name: "JavaScript Development",
-      description: "I am a Full Stack JavaScript Developer",
+      name: "Front End Development",
+      description: "React.js Redux",
     },
     {
       id: 3,
@@ -22,22 +16,28 @@ const Services = () => {
       description: "Create only responsive sites",
     },
     {
+      id: 1,
+      icon: "fas fa-store",
+      name: "Eccomerse Sites",
+      description: "Shopping, Eccomerse.js",
+    },
+    {
       id: 4,
-      icon: "fas fa-robot",
-      name: "AI development",
-      description: "I am a currently learning Python AI development",
+      icon: "fas fa-server",
+      name: "Back End development",
+      description: "Node.js, Express.js",
     },
     {
       id: 5,
-      icon: "fab fa-js",
-      name: "JavaScript Development",
-      description: "I am a Full Stack JavaScript Developer",
+      icon: "fas fa-database",
+      name: "Database",
+      description: "MySQL, MongoDB",
     },
     {
       id: 6,
-      icon: "fas fa-mobile",
-      name: "Responsive Designs",
-      description: "Create only responsive sites",
+      icon: "fas fa-portrait",
+      name: "Portifolio Sites",
+      description: "Portifolio",
     },
   ];
 
