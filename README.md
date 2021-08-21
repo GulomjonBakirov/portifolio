@@ -1,6 +1,6 @@
 # portifolio
 Bakirov G'ulomjon Portifolio
 
-Demo
+Version 0.1.2
 
 [gulomjonbakirov.uz](https://gulomjonbakirov.uz)
