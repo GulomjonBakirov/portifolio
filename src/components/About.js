@@ -42,7 +42,7 @@ const About = () => {
               </p>
               <p>
                 {" "}
-                <span> experience : </span> 2 years{" "}
+                <span> experience : </span> 6 months{" "}
               </p>
               <p>
                 {" "}
